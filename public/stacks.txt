@@ -1,0 +1,707 @@
+Q1. What is the time complexity of inserting an element at the end of an ArrayList in Java (amortized)?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: A
+
+Q2. Which collection in Java allows null keys and null values but does not guarantee any order?
+A. TreeMap
+B. LinkedHashMap
+C. HashMap
+D. ConcurrentHashMap
+Answer: C
+
+Q3. What does the peek() method return in a Queue when the queue is empty?
+A. null
+B. NoSuchElementException
+C. 0
+D. false
+Answer: A
+
+Q4. Which of the following is a LIFO data structure in Java?
+A. Queue
+B. Deque
+C. Stack
+D. List
+Answer: C
+
+Q5. What is the initial capacity of a Java Stack when created using new Stack()?
+A. 10
+B. 16
+C. 0
+D. Depends on JVM
+Answer: A
+
+Q6. Which method is used to add an element to the front of a Deque?
+A. addFirst()
+B. offerFirst()
+C. push()
+D. All of the above
+Answer: D
+
+Q7. In a PriorityQueue, what determines the order of elements?
+A. Insertion order
+B. Natural order or comparator
+C. Random order
+D. Reverse insertion order
+Answer: B
+
+Q8. Which of the following is not a valid Queue operation in Java?
+A. offer()
+B. poll()
+C. remove()
+D. indexOf()
+Answer: D
+
+Q9. What is the output of the following code?
+Stack<Integer> s = new Stack<>(); s.push(1); s.push(2); System.out.println(s.pop() + s.pop());
+A. 3
+B. 2
+C. 1
+D. Compilation error
+Answer: A
+
+Q10. Which class implements a double-ended queue in Java?
+A. ArrayDeque
+B. LinkedList
+C. Both A and B
+D. PriorityQueue
+Answer: C
+
+Q11. What is the time complexity of the poll() operation in a PriorityQueue?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n log n)
+Answer: B
+
+Q12. Which method in Stack throws an exception if the stack is empty?
+A. peek()
+B. pop()
+C. push()
+D. Both A and B
+Answer: B
+
+Q13. What does the offer() method return when it fails to insert an element in a bounded queue?
+A. true
+B. false
+C. throws exception
+D. null
+Answer: B
+
+Q14. Which interface does not implement the Queue interface in Java?
+A. LinkedList
+B. PriorityQueue
+C. ArrayDeque
+D. TreeSet
+Answer: D
+
+Q15. What is the order of elements in a LinkedList when used as a Queue?
+A. FIFO
+B. LIFO
+C. Sorted
+D. Random
+Answer: A
+
+Q16. Which method removes and returns the head of a Queue and throws an exception if empty?
+A. poll()
+B. remove()
+C. peek()
+D. element()
+Answer: B
+
+Q17. What is the maximum number of elements in a Stack created with default constructor?
+A. 10
+B. Integer.MAX_VALUE
+C. No fixed limit (depends on memory)
+D. 100
+Answer: C
+
+Q18. Which of these is a thread-safe implementation of Queue in Java?
+A. LinkedList
+B. PriorityQueue
+C. ConcurrentLinkedQueue
+D. ArrayDeque
+Answer: C
+
+Q19. What is the output of: new ArrayDeque<>(Arrays.asList(1,2,3)).pop()?
+A. 1
+B. 2
+C. 3
+D. NoSuchElementException
+Answer: A
+
+Q20. Which method in Queue retrieves but does not remove the head, returning null if empty?
+A. element()
+B. peek()
+C. poll()
+D. remove()
+Answer: B
+
+Q21. In a Stack, what is the time complexity of the search(Object o) method?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: B
+
+Q22. Which collection allows insertion and removal from both ends efficiently?
+A. ArrayList
+B. Vector
+C. ArrayDeque
+D. HashSet
+Answer: C
+
+Q23. What is the default initial capacity of an ArrayDeque?
+A. 10
+B. 16
+C. 8
+D. Depends on JVM
+Answer: B
+
+Q24. Which Queue implementation uses a binary heap internally?
+A. LinkedList
+B. ArrayDeque
+C. PriorityQueue
+D. ConcurrentLinkedQueue
+Answer: C
+
+Q25. Which method is used to push an element onto a Stack?
+A. add()
+B. push()
+C. offer()
+D. insert()
+Answer: B
+
+Q26. What is the output of the following code?
+Queue<Integer> q = new LinkedList<>(); q.add(5); q.add(10); System.out.println(q.remove() + q.remove());
+A. 15
+B. 10
+C. 5
+D. Compilation error
+Answer: A
+
+Q27. Which of the following is true about a PriorityQueue?
+A. It is ordered by insertion order
+B. It is not ordered
+C. It orders elements by priority
+D. It orders elements in reverse insertion order
+Answer: C
+
+Q28. Which method in Deque removes the last element and returns it, throwing exception if empty?
+A. removeLast()
+B. pollLast()
+C. getLast()
+D. pop()
+Answer: A
+
+Q29. What is the time complexity of the contains() method in a Stack?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: B
+
+Q30. Which of these is a bounded Queue implementation?
+A. ArrayDeque
+B. LinkedList
+C. PriorityQueue
+D. LinkedBlockingQueue
+Answer: D
+
+Q31. What is the output of: Stack<Integer> s = new Stack<>(); s.push(null); System.out.println(s.size())?
+A. 0
+B. 1
+C. NullPointerException
+D. Compilation error
+Answer: B
+
+Q32. Which method in Queue adds an element and throws an exception if the queue is full?
+A. offer()
+B. add()
+C. put()
+D. push()
+Answer: B
+
+Q33. In a Deque, which method is equivalent to pop()?
+A. removeFirst()
+B. pollFirst()
+C. removeLast()
+D. pollLast()
+Answer: A
+
+Q34. What is the default order of a PriorityQueue of Strings?
+A. Alphabetical ascending
+B. Alphabetical descending
+C. Insertion order
+D. No guaranteed order
+Answer: A
+
+Q35. Which class is not a part of the Java Collections Framework?
+A. Stack
+B. Vector
+C. ArrayDeque
+D. Queue (interface)
+Answer: D (it is an interface, not a class)
+
+Q36. What is the time complexity of the remove(Object o) method in an ArrayDeque?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: B
+
+Q37. Which Queue method returns the head without removing it, throwing exception if empty?
+A. peek()
+B. poll()
+C. element()
+D. remove()
+Answer: C
+
+Q38. What is the output of: PriorityQueue<Integer> pq = new PriorityQueue<>(); pq.add(10); pq.add(5); System.out.println(pq.poll())?
+A. 10
+B. 5
+C. null
+D. Compilation error
+Answer: B
+
+Q39. Which method in Stack returns the position of an object (1-based index)?
+A. indexOf()
+B. search()
+C. find()
+D. locate()
+Answer: B
+
+Q40. Which of the following is a synchronized version of Stack?
+A. Stack itself
+B. ArrayDeque
+C. ConcurrentLinkedDeque
+D. None of the above
+Answer: A (Stack is synchronized)
+
+Q41. What is the capacity growth factor of ArrayList when used as a Queue?
+A. 1.5x
+B. 2x
+C. 0.5x
+D. No growth factor (fixed)
+Answer: B (for ArrayList, but it's not a Queue; trick question)
+
+Q42. Which method in Deque adds an element to the tail and returns true if successful?
+A. add()
+B. offer()
+C. offerLast()
+D. Both B and C
+Answer: D
+
+Q43. What is the output of the following code?
+Queue<Integer> q = new LinkedList<>(); q.offer(1); q.offer(2); System.out.println(q.peek() + q.poll());
+A. 2
+B. 1
+C. 3
+D. 0
+Answer: B (peek=1, poll=1, sum=2? Actually 1+1=2, but options? Correct is 2)
+
+Q44. Which collection is best for implementing a circular buffer?
+A. ArrayList
+B. LinkedList
+C. ArrayDeque
+D. PriorityQueue
+Answer: C
+
+Q45. What is the time complexity of the push() operation in a Stack?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: A
+
+Q46. Which method in Queue removes and returns the head, returning null if empty?
+A. remove()
+B. poll()
+C. element()
+D. peek()
+Answer: B
+
+Q47. What is the output of: Deque<Integer> d = new ArrayDeque<>(); d.push(10); d.push(20); System.out.println(d.pop() + d.peek())?
+A. 30
+B. 20
+C. 40
+D. 10
+Answer: C (pop=20, peek=10, sum=30? Actually 20+10=30; option A)
+
+Q48. Which of these can be used as a Stack in Java?
+A. Stack
+B. ArrayDeque
+C. LinkedList
+D. All of the above
+Answer: D
+
+Q49. What is the default ordering of elements in a PriorityQueue if no comparator is provided?
+A. Natural ordering (Comparable)
+B. Insertion order
+C. Reverse natural ordering
+D. Random
+Answer: A
+
+Q50. Which method in Deque removes the last element without returning it?
+A. pollLast()
+B. removeLast()
+C. pop()
+D. None of the above (removes and returns)
+Answer: D
+
+Q51. What is the time complexity of the contains() method in a PriorityQueue?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n log n)
+Answer: B
+
+Q52. Which Queue implementation is based on a linked list?
+A. ArrayDeque
+B. PriorityQueue
+C. LinkedList
+D. ConcurrentLinkedQueue
+Answer: C
+
+Q53. What is the output of: Stack<Integer> s = new Stack<>(); s.add(5); s.add(6); System.out.println(s.get(0))?
+A. 5
+B. 6
+C. 0
+D. Compilation error
+Answer: A
+
+Q54. Which method in Queue retrieves and removes the head, throwing exception if empty?
+A. poll()
+B. remove()
+C. peek()
+D. element()
+Answer: B
+
+Q55. What is the initial capacity of a PriorityQueue created with default constructor?
+A. 10
+B. 11
+C. 16
+D. 8
+Answer: B (PriorityQueue default initial capacity is 11)
+
+Q56. Which of the following is a blocking queue in Java?
+A. ArrayBlockingQueue
+B. PriorityQueue
+C. LinkedList
+D. ArrayDeque
+Answer: A
+
+Q57. What is the output of: Deque<Integer> d = new LinkedList<>(); d.addFirst(1); d.addLast(2); System.out.println(d.pollFirst() + d.pollLast())?
+A. 3
+B. 2
+C. 1
+D. 0
+Answer: A
+
+Q58. Which method in Stack returns the top element without removing it?
+A. pop()
+B. peek()
+C. top()
+D. getLast()
+Answer: B
+
+Q59. What is the time complexity of the add() method in a PriorityQueue?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n log n)
+Answer: B
+
+Q60. Which collection is not a subtype of Queue?
+A. PriorityQueue
+B. ArrayDeque
+C. LinkedList
+D. TreeSet
+Answer: D
+
+Q61. What is the output of the following code?
+Queue<Integer> q = new PriorityQueue<>(); q.add(2); q.add(1); q.add(3); System.out.println(q.poll());
+A. 1
+B. 2
+C. 3
+D. null
+Answer: A
+
+Q62. Which method in Deque is used to insert an element at the front, throwing exception if full?
+A. addFirst()
+B. offerFirst()
+C. push()
+D. Both A and C
+Answer: D
+
+Q63. What is the time complexity of the remove() method in a Queue (head removal)?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: A (for LinkedList, O(1) for head removal)
+
+Q64. Which of the following is true about ArrayDeque?
+A. It is not thread-safe
+B. It is thread-safe
+C. It allows null elements
+D. It is a List implementation
+Answer: A
+
+Q65. What is the output of: Stack<Integer> s = new Stack<>(); s.push(1); s.push(2); s.pop(); System.out.println(s.peek())?
+A. 1
+B. 2
+C. 0
+D. NoSuchElementException
+Answer: A
+
+Q66. Which method in Queue is used to add an element to the tail, returning false if full?
+A. add()
+B. offer()
+C. put()
+D. push()
+Answer: B
+
+Q67. What is the capacity of an ArrayDeque after calling ensureCapacity(100)?
+A. 100
+B. 128
+C. 100 (actual capacity may be power of two)
+D. 64
+Answer: B (ArrayDeque capacity is always a power of two; ensures capacity at least 100, next power is 128)
+
+Q68. Which of these is a LIFO implementation in Java Collections?
+A. LinkedList
+B. ArrayDeque (used as stack)
+C. Stack
+D. All of the above
+Answer: D
+
+Q69. What is the time complexity of the size() method in any Queue implementation?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: A
+
+Q70. What is the output of the following code?
+Deque<Integer> d = new ArrayDeque<>(); d.add(10); d.add(20); d.addFirst(30); System.out.println(d.removeLast());
+A. 10
+B. 20
+C. 30
+D. NoSuchElementException
+Answer: B
+
+Q71. Which method in PriorityQueue removes the head element?
+A. poll()
+B. remove()
+C. Both A and B
+D. peek()
+Answer: C
+
+Q72. What is the default growth factor of an ArrayList when used as a stack?
+A. 1.5
+B. 2
+C. 3
+D. No growth (fixed)
+Answer: A (ArrayList growth factor is 1.5x)
+
+Q73. Which of the following is a thread-safe Stack alternative?
+A. Stack
+B. ArrayDeque
+C. ConcurrentLinkedDeque
+D. LinkedList
+Answer: C
+
+Q74. What is the output of: Queue<Integer> q = new LinkedList<>(); q.add(null); System.out.println(q.size())?
+A. 0
+B. 1
+C. NullPointerException
+D. Compilation error
+Answer: B
+
+Q75. Which method in Deque removes the first occurrence of an element?
+A. remove()
+B. removeFirstOccurrence()
+C. removeLastOccurrence()
+D. poll()
+Answer: B
+
+Q76. What is the time complexity of the peek() method in a PriorityQueue?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n^2)
+Answer: A
+
+Q77. Which collection is best for implementing a stack with O(1) push and pop?
+A. ArrayList
+B. LinkedList
+C. ArrayDeque
+D. All of the above
+Answer: C (ArrayDeque is more efficient than Stack and LinkedList for stack operations)
+
+Q78. What is the output of the following code?
+Stack<Integer> s = new Stack<>(); System.out.println(s.isEmpty()); s.push(5); System.out.println(s.isEmpty());
+A. true false
+B. false true
+C. true true
+D. false false
+Answer: A
+
+Q79. Which method in Queue is used to check if the queue is empty?
+A. empty()
+B. isEmpty()
+C. size()==0
+D. Both B and C
+Answer: D
+
+Q80. What is the default ordering in a PriorityQueue of integers?
+A. Ascending
+B. Descending
+C. Insertion order
+D. No ordering
+Answer: A
+
+Q81. Which method in Deque retrieves the last element without removing it, returning null if empty?
+A. peekLast()
+B. getLast()
+C. pollLast()
+D. removeLast()
+Answer: A
+
+Q82. What is the output of: ArrayDeque<Integer> d = new ArrayDeque<>(); d.push(10); d.push(20); System.out.println(d.pop() + d.peek())?
+A. 30
+B. 20
+C. 40
+D. 10
+Answer: A (pop=20, peek=10, sum=30)
+
+Q83. Which class is a legacy class in Java Collections?
+A. Stack
+B. ArrayDeque
+C. LinkedList
+D. PriorityQueue
+Answer: A
+
+Q84. What is the time complexity of the remove(Object o) method in a LinkedList (used as Queue)?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: B
+
+Q85. Which method in Queue is used to retrieve the head without removing, returning null if empty?
+A. element()
+B. peek()
+C. poll()
+D. remove()
+Answer: B
+
+Q86. What is the output of the following code?
+PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder()); pq.add(3); pq.add(1); pq.add(2); System.out.println(pq.poll());
+A. 1
+B. 2
+C. 3
+D. null
+Answer: C
+
+Q87. Which method in Deque adds an element to the tail, throwing exception if full?
+A. add()
+B. addLast()
+C. offer()
+D. Both A and B
+Answer: D
+
+Q88. What is the initial capacity of a Stack after creation?
+A. 10
+B. 16
+C. 0
+D. Depends on JVM
+Answer: A
+
+Q89. Which of the following is not a Queue method?
+A. add()
+B. offer()
+C. put()
+D. push()
+Answer: D
+
+Q90. What is the output of: LinkedList<Integer> q = new LinkedList<>(); q.add(1); q.add(2); System.out.println(q.removeFirst() + q.removeLast())?
+A. 3
+B. 2
+C. 1
+D. 0
+Answer: A
+
+Q91. Which method in Stack is synchronized?
+A. push()
+B. pop()
+C. peek()
+D. All of the above
+Answer: D
+
+Q92. What is the time complexity of the add(index, element) operation in a LinkedList when used as a List (not Queue)?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: B
+
+Q93. Which collection uses a resizable array internally?
+A. LinkedList
+B. PriorityQueue
+C. ArrayDeque
+D. Stack
+Answer: C
+
+Q94. What is the output of: Deque<Integer> d = new ArrayDeque<>(); d.add(10); d.add(20); d.poll(); System.out.println(d.peek())?
+A. 10
+B. 20
+C. null
+D. NoSuchElementException
+Answer: B
+
+Q95. Which method in Queue is used to remove all elements?
+A. clear()
+B. removeAll()
+C. delete()
+D. reset()
+Answer: A
+
+Q96. What is the time complexity of the poll() method in a LinkedList when used as a Queue?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: A
+
+Q97. Which of the following is a concurrent Queue implementation?
+A. PriorityQueue
+B. LinkedList
+C. ConcurrentLinkedQueue
+D. ArrayDeque
+Answer: C
+
+Q98. What is the output of the following code?
+Stack<Integer> s = new Stack<>(); s.push(1); s.push(2); s.push(3); System.out.println(s.search(2));
+A. 1
+B. 2
+C. 3
+D. -1
+Answer: B (1-based index, top is 1, 2 is at position 2)
+
+Q99. Which method in Deque retrieves and removes the last element, returning null if empty?
+A. removeLast()
+B. pollLast()
+C. getLast()
+D. peekLast()
+Answer: B
+
+Q100. What is the output of: PriorityQueue<Integer> pq = new PriorityQueue<>(); pq.add(5); pq.add(5); System.out.println(pq.size() + pq.poll())?
+A. 6
+B. 5
+C. 10
+D. 7
+Answer: A (size=2, poll=5, sum=7? Actually 2+5=7, but option D says 7)

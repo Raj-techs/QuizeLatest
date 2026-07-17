@@ -1,0 +1,50 @@
+TOPIC: Hash Maps
+
+Q1. What is the initial capacity of HashMap in Java?
+A. 8
+B. 16
+C. 32
+D. 64
+Answer: B
+
+Q2. What is the default load factor of HashMap?
+A. 0.5
+B. 0.75
+C. 0.9
+D. 1.0
+Answer: B
+
+Q3. Which data structure is used internally by HashMap?
+A. Array
+B. LinkedList
+C. Array of LinkedLists (or Nodes)
+D. Tree
+Answer: C
+
+Q4. In Java 8, what happens when a bucket in HashMap has more than 8 entries?
+A. It throws an exception
+B. It converts that bucket to a balanced tree
+C. It increases the capacity
+D. It removes old entries
+Answer: B
+
+Q5. What is the time complexity of get() and put() operations in HashMap (average case)?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n log n)
+Answer: A
+
+Q6. What is the purpose of the hashCode() method in HashMap?
+A. To store the key
+B. To find the bucket index for the key
+C. To compare keys
+D. To store the value
+Answer: B
+
+Q7. Which of the following is true about HashMap?
+A. It is synchronized
+B. It allows null key and null values
+C. It maintains insertion order
+D. It is a sorted collection
+Answer: B

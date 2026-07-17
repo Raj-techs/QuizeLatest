@@ -1,0 +1,50 @@
+TOPIC: Sets
+
+Q1. Which Set implementation maintains insertion order?
+A. HashSet
+B. TreeSet
+C. LinkedHashSet
+D. EnumSet
+Answer: C
+
+Q2. Which Set implementation is sorted in natural order?
+A. HashSet
+B. TreeSet
+C. LinkedHashSet
+D. CopyOnWriteArraySet
+Answer: B
+
+Q3. What is the time complexity of add(), remove(), and contains() in HashSet?
+A. O(1) average case
+B. O(n)
+C. O(log n)
+D. O(n log n)
+Answer: A
+
+Q4. Which Set allows null elements?
+A. TreeSet
+B. HashSet
+C. Both
+D. None
+Answer: B
+
+Q5. What is the underlying data structure of TreeSet?
+A. Hash Table
+B. Balanced Tree
+C. Linked List
+D. Array
+Answer: B
+
+Q6. Which Set is best for operations like add(), remove(), and contains() when order doesn't matter?
+A. TreeSet
+B. HashSet
+C. LinkedHashSet
+D. EnumSet
+Answer: B
+
+Q7. Which Set implementation is most efficient for enum types?
+A. HashSet
+B. TreeSet
+C. LinkedHashSet
+D. EnumSet
+Answer: D

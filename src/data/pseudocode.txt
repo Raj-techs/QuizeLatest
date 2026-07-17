@@ -1,0 +1,81 @@
+TOPIC: Pseudocode & Java Programs
+
+Q1. What does the following pseudocode print?
+CODE:
+x = 5
+y = 0
+while x > 0:
+    y = y + x
+    x = x - 1
+print(y)
+ENDCODE
+A. 5
+B. 10
+C. 15
+D. 25
+Answer: C
+
+Q2. What is the output of this Java method for n = 5?
+CODE:
+public static int mystery(int n) {
+    if (n <= 1) {
+        return n;
+    }
+    return mystery(n - 1) + mystery(n - 2);
+}
+ENDCODE
+A. 3
+B. 5
+C. 8
+D. 13
+Answer: B
+
+Q3. What does this pseudocode compute for the array [4, 2, 7, 1, 9]?
+CODE:
+function process(arr):
+    result = arr[0]
+    for i from 1 to length(arr) - 1:
+        if arr[i] > result:
+            result = arr[i]
+    return result
+ENDCODE
+A. The sum of the array
+B. The smallest element
+C. The largest element
+D. The average of the array
+Answer: C
+
+Q4. What will this Java snippet print to the console?
+CODE:
+List<Integer> nums = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+int total = 0;
+for (int n : nums) {
+    if (n % 2 == 0) {
+        total += n;
+    }
+}
+System.out.println(total);
+ENDCODE
+A. 6
+B. 9
+C. 15
+D. 0
+Answer: A
+
+Q5. What does this pseudocode do to the linked list represented by head?
+CODE:
+function reverse(head):
+    prev = null
+    current = head
+    while current != null:
+        nextNode = current.next
+        current.next = prev
+        prev = current
+        current = nextNode
+    return prev
+ENDCODE
+A. Deletes every node in the list
+B. Reverses the linked list in place
+C. Finds the middle node of the list
+D. Detects a cycle in the list
+Answer: B

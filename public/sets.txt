@@ -1,0 +1,699 @@
+Q1. What is the initial default capacity of a HashSet in Java?
+A. 8
+B. 16
+C. 32
+D. 64
+Answer: B
+
+Q2. Which interface does HashMap implement that allows it to maintain the order of insertion?
+A. NavigableMap
+B. SortedMap
+C. LinkedHashMap
+D. ConcurrentMap
+Answer: C
+
+Q3. What is the load factor of a HashSet created with the default constructor?
+A. 0.5
+B. 0.75
+C. 1.0
+D. 1.5
+Answer: B
+
+Q4. How does HashMap handle collisions?
+A. By creating a new array
+B. By using a linked list or tree structure
+C. By discarding duplicate keys
+D. By rehashing the key
+Answer: B
+
+Q5. What is the time complexity of get() operation in a HashMap with a good hash function?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n^2)
+Answer: A
+
+Q6. When does a HashMap convert a linked list to a red-black tree?
+A. When the number of collisions exceeds 8
+B. When the size exceeds 64
+C. Both A and B
+D. When the load factor exceeds 0.75
+Answer: C
+
+Q7. What is the initial capacity of a HashMap created with new HashMap<>(100)?
+A. 100
+B. 128
+C. 256
+D. 64
+Answer: B
+
+Q8. Which of the following is true about HashSet in Java?
+A. It maintains insertion order
+B. It allows duplicate elements
+C. It is backed by a HashMap
+D. It is thread-safe
+Answer: C
+
+Q9. What is the output of: Set<String> set = new HashSet<>(); set.add("A"); set.add("A"); System.out.println(set.size());?
+A. 0
+B. 1
+C. 2
+D. NullPointerException
+Answer: B
+
+Q10. Which method is used to merge two HashMap entries in Java 8?
+A. putAll()
+B. merge()
+C. combine()
+D. addAll()
+Answer: B
+
+Q11. What is the threshold for converting a linked list to a tree in HashMap?
+A. 6
+B. 8
+C. 10
+D. 12
+Answer: B
+
+Q12. Which of the following is a fail-fast iterator in HashMap?
+A. Iterator returned by entrySet()
+B. Iterator returned by keySet()
+C. Both A and B
+D. Spliterator
+Answer: C
+
+Q13. What is the default initial capacity of a HashMap?
+A. 8
+B. 16
+C. 32
+D. 64
+Answer: B
+
+Q14. How does HashSet ensure uniqueness of elements?
+A. By comparing references
+B. By using equals() and hashCode()
+C. By using compareTo()
+D. By using identityHashCode()
+Answer: B
+
+Q15. What is the maximum capacity of a HashMap in Java?
+A. 2^30
+B. 2^31
+C. Integer.MAX_VALUE
+D. Unlimited
+Answer: A
+
+Q16. Which of the following operations is NOT supported by HashSet?
+A. add()
+B. remove()
+C. get()
+D. contains()
+Answer: C
+
+Q17. What is the time complexity of remove() operation in HashMap in the worst case?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n^2)
+Answer: C
+
+Q18. What is the purpose of the hashCode() method in HashMap?
+A. To compare two objects
+B. To determine the bucket index
+C. To check for equality
+D. To sort elements
+Answer: B
+
+Q19. Which class provides a thread-safe version of HashMap?
+A. ConcurrentHashMap
+B. SynchronizedHashMap
+C. Both A and B
+D. HashTable
+Answer: C
+
+Q20. What is the output if we put null key in a HashMap?
+A. NullPointerException
+B. It is allowed and stored at index 0
+C. It is not allowed
+D. It replaces all null keys
+Answer: B
+
+Q21. Which method is used to iterate over the entries of a HashMap?
+A. forEach()
+B. entrySet().iterator()
+C. Both A and B
+D. stream()
+Answer: C
+
+Q22. What is the initial capacity of a HashSet with load factor 0.8?
+A. 8
+B. 16
+C. Cannot be specified with load factor only
+D. 32
+Answer: C
+
+Q23. Which of the following is NOT a characteristic of HashMap?
+A. Allows one null key
+B. Allows multiple null values
+C. Maintains insertion order
+D. Not synchronized
+Answer: C
+
+Q24. What is the purpose of the rehash operation in HashMap?
+A. To increase the capacity
+B. To decrease the capacity
+C. To reorder the elements
+D. To clear the map
+Answer: A
+
+Q25. Which of the following is true about the equals() method in HashSet?
+A. It compares the size of two sets
+B. It compares the elements in the sets
+C. It compares the hashcodes
+D. It always returns false
+Answer: B
+
+Q26. What is the time complexity of contains() in HashSet?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n^2)
+Answer: A
+
+Q27. Which of the following can be used to create a synchronized HashMap?
+A. Collections.synchronizedMap()
+B. ConcurrentHashMap
+C. Both A and B
+D. HashMap is already synchronized
+Answer: C
+
+Q28. What is the default tree threshold in HashMap in Java 8?
+A. 8
+B. 16
+C. 64
+D. 128
+Answer: A
+
+Q29. Which method is called internally when adding an element to HashSet?
+A. put()
+B. add()
+C. insert()
+D. store()
+Answer: A
+
+Q30. What is the output of: Map<String, Integer> map = new HashMap<>(); map.put("A", 1); map.put("A", 2); System.out.println(map.get("A"));?
+A. 1
+B. 2
+C. null
+D. Compilation error
+Answer: B
+
+Q31. Which of the following is a fail-safe iterator?
+A. Iterator from HashMap
+B. Iterator from ConcurrentHashMap
+C. Iterator from HashSet
+D. Iterator from LinkedHashMap
+Answer: B
+
+Q32. What is the purpose of the compute() method in HashMap?
+A. To compute the hashcode
+B. To compute a new value for a key
+C. To compute the capacity
+D. To compute the size
+Answer: B
+
+Q33. Which of the following is true about HashSet's contains() method?
+A. It uses equals() and hashCode()
+B. It uses only equals()
+C. It uses only hashCode()
+D. It uses compareTo()
+Answer: A
+
+Q34. What is the default size of the array used by HashMap when created with default constructor?
+A. 8
+B. 16
+C. 32
+D. 64
+Answer: B
+
+Q35. Which of the following is a valid way to copy a HashMap?
+A. new HashMap<>(originalMap)
+B. originalMap.clone()
+C. Both A and B
+D. None of the above
+Answer: C
+
+Q36. What is the purpose of the keySet() method in HashMap?
+A. Returns a Set of keys
+B. Returns a Set of entries
+C. Returns a Collection of values
+D. Returns a Set of values
+Answer: A
+
+Q37. Which of the following operations is atomic in ConcurrentHashMap?
+A. put()
+B. get()
+C. remove()
+D. All of the above
+Answer: D
+
+Q38. What is the time complexity of iteration over HashMap?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: B
+
+Q39. Which of the following is true about LinkedHashMap?
+A. It maintains insertion order
+B. It maintains access order
+C. Both A and B
+D. It does not maintain any order
+Answer: C
+
+Q40. What is the output if we try to add an element to a HashSet that is already present?
+A. true
+B. false
+C. Exception
+D. null
+Answer: B
+
+Q41. Which method in HashMap returns the number of key-value mappings?
+A. size()
+B. length()
+C. count()
+D. capacity()
+Answer: A
+
+Q42. What is the purpose of the entrySet() method in HashMap?
+A. Returns a Set of Map.Entry objects
+B. Returns a Set of keys
+C. Returns a Collection of values
+D. Returns a Set of hashcodes
+Answer: A
+
+Q43. Which of the following is a tree-based implementation of Map?
+A. HashMap
+B. TreeMap
+C. LinkedHashMap
+D. ConcurrentHashMap
+Answer: B
+
+Q44. What is the default value of load factor in HashSet?
+A. 0.5
+B. 0.75
+C. 1.0
+D. 0.25
+Answer: B
+
+Q45. How does HashMap handle null keys?
+A. Stores at index 0
+B. Throws NullPointerException
+C. Stores at last index
+D. Replaces existing null key
+Answer: A
+
+Q46. Which of the following is true about the putIfAbsent() method in HashMap?
+A. Puts the value if key is absent
+B. Puts the value if value is absent
+C. Puts the value always
+D. Throws exception
+Answer: A
+
+Q47. What is the purpose of the computeIfAbsent() method?
+A. Computes value if key is absent
+B. Computes value if key is present
+C. Computes value always
+D. Computes hashcode
+Answer: A
+
+Q48. Which of the following is true about the clear() method in HashMap?
+A. Removes all mappings
+B. Removes the first mapping
+C. Removes the last mapping
+D. Clears the hashcode
+Answer: A
+
+Q49. What is the output of: Set<Integer> set = new HashSet<>(); set.add(1); set.add(2); set.add(1); System.out.println(set);?
+A. [1, 2]
+B. [1, 1, 2]
+C. [2, 1]
+D. [1]
+Answer: A
+
+Q50. Which method is used to get the value for a key in HashMap?
+A. get()
+B. getOrDefault()
+C. Both A and B
+D. retrieve()
+Answer: C
+
+Q51. What is the purpose of the replace() method in HashMap?
+A. Replaces value for a key if present
+B. Replaces key if value is present
+C. Replaces both key and value
+D. Replaces all entries
+Answer: A
+
+Q52. Which of the following is true about the values() method in HashMap?
+A. Returns a Collection of values
+B. Returns a Set of values
+C. Returns a List of values
+D. Returns a Map of values
+Answer: A
+
+Q53. What is the time complexity of put() operation in HashMap in the average case?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n^2)
+Answer: A
+
+Q54. Which of the following is a valid way to check if a key exists in HashMap?
+A. containsKey()
+B. containsValue()
+C. Both A and B
+D. exists()
+Answer: A
+
+Q55. What is the purpose of the forEach() method in HashMap?
+A. Iterates over entries
+B. Iterates over keys
+C. Iterates over values
+D. All of the above
+Answer: D
+
+Q56. Which of the following is true about the hashCode() method in HashSet?
+A. It returns the sum of hashcodes of elements
+B. It returns the hashcode of the set
+C. It returns the hashcode of the first element
+D. It returns 0
+Answer: A
+
+Q57. What is the output of: Map<String, String> map = new HashMap<>(); map.put(null, "A"); System.out.println(map.get(null));?
+A. A
+B. null
+C. Exception
+D. Compilation error
+Answer: A
+
+Q58. Which of the following is a non-static inner class in HashMap?
+A. Entry
+B. Node
+C. KeySet
+D. Values
+Answer: B
+
+Q59. What is the purpose of the merge() method in HashMap?
+A. Merges two maps
+B. Merges a key-value pair
+C. Merges two values for a key
+D. Merges two keys
+Answer: C
+
+Q60. Which of the following is true about ConcurrentHashMap?
+A. Allows null keys
+B. Allows null values
+C. Does not allow null keys or values
+D. Allows multiple null keys
+Answer: C
+
+Q61. What is the default concurrency level of ConcurrentHashMap?
+A. 8
+B. 16
+C. 32
+D. 64
+Answer: B
+
+Q62. Which method is used to get the hashcode of a key in HashMap?
+A. hashCode()
+B. hash()
+C. computeHash()
+D. getHash()
+Answer: B
+
+Q63. What is the purpose of the computeIfPresent() method?
+A. Computes value if key is present
+B. Computes value if key is absent
+C. Computes value always
+D. Computes hashcode
+Answer: A
+
+Q64. Which of the following is true about the remove() method in HashMap?
+A. Removes mapping for a key
+B. Removes mapping for a value
+C. Both A and B
+D. Removes all mappings
+Answer: A
+
+Q65. What is the output of: Set<String> set = new HashSet<>(); set.add("A"); set.add("B"); set.remove("A"); System.out.println(set.contains("A"));?
+A. true
+B. false
+C. Exception
+D. null
+Answer: B
+
+Q66. Which of the following is a valid way to create a HashSet with initial capacity 100?
+A. new HashSet<>(100)
+B. new HashSet<>(100, 0.75f)
+C. Both A and B
+D. new HashSet<>(100, 1.0f)
+Answer: C
+
+Q67. What is the purpose of the equals() method in HashMap?
+A. Compares two maps
+B. Compares two keys
+C. Compares two values
+D. Compares two hashcodes
+Answer: A
+
+Q68. Which of the following is true about the putAll() method in HashMap?
+A. Copies all mappings from another map
+B. Copies all keys from another map
+C. Copies all values from another map
+D. Copies all entries from another map
+Answer: A
+
+Q69. What is the time complexity of containsKey() in HashMap?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n^2)
+Answer: A
+
+Q70. Which of the following is true about the isEmpty() method in HashMap?
+A. Returns true if map is empty
+B. Returns true if map size is 0
+C. Both A and B
+D. Returns false if map is empty
+Answer: C
+
+Q71. What is the output of: Map<String, Integer> map = new HashMap<>(); map.put("A", 1); System.out.println(map.get("B"));?
+A. 1
+B. null
+C. Exception
+D. Compilation error
+Answer: B
+
+Q72. Which of the following is a valid way to synchronize a HashSet?
+A. Collections.synchronizedSet()
+B. ConcurrentHashSet
+C. Both A and B
+D. HashSet is already synchronized
+Answer: A
+
+Q73. What is the purpose of the clone() method in HashMap?
+A. Creates a shallow copy
+B. Creates a deep copy
+C. Creates a synchronized copy
+D. Creates an empty copy
+Answer: A
+
+Q74. Which of the following is true about the size() method in HashSet?
+A. Returns the number of elements
+B. Returns the capacity
+C. Returns the load factor
+D. Returns the threshold
+Answer: A
+
+Q75. What is the output of: Set<Integer> set = new HashSet<>(); set.add(1); set.add(2); System.out.println(set.size());?
+A. 1
+B. 2
+C. 3
+D. 0
+Answer: B
+
+Q76. Which method is used to check if a value exists in HashMap?
+A. containsValue()
+B. containsKey()
+C. Both A and B
+D. exists()
+Answer: A
+
+Q77. What is the purpose of the replaceAll() method in HashMap?
+A. Replaces all values with a new value
+B. Replaces all keys with a new key
+C. Replaces all entries with a new entry
+D. Replaces all values based on a function
+Answer: D
+
+Q78. Which of the following is true about the entrySet() method?
+A. Returns a view of the map
+B. Returns a copy of the map
+C. Returns a synchronized view
+D. Returns an unmodifiable view
+Answer: A
+
+Q79. What is the time complexity of containsValue() in HashMap?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n^2)
+Answer: C
+
+Q80. Which of the following is true about the default constructor of HashSet?
+A. Creates an empty set with default capacity
+B. Creates an empty set with default load factor
+C. Both A and B
+D. Creates a set with one element
+Answer: C
+
+Q81. What is the purpose of the hash() method in HashMap?
+A. Computes the hashcode of the key
+B. Computes the bucket index
+C. Computes the load factor
+D. Computes the size
+Answer: A
+
+Q82. Which of the following is true about the keySet() method?
+A. Returns a Set view of the keys
+B. Returns a List view of the keys
+C. Returns a Map view of the keys
+D. Returns a Collection view of the keys
+Answer: A
+
+Q83. What is the output of: Map<String, Integer> map = new HashMap<>(); map.put("A", null); System.out.println(map.get("A"));?
+A. null
+B. Exception
+C. 0
+D. Compilation error
+Answer: A
+
+Q84. Which of the following is true about the remove() method with two arguments?
+A. Removes mapping for key and value
+B. Removes mapping for key only
+C. Removes mapping for value only
+D. Removes all mappings
+Answer: A
+
+Q85. What is the purpose of the compute() method in HashMap?
+A. Computes a new value for a key
+B. Computes the hashcode
+C. Computes the capacity
+D. Computes the size
+Answer: A
+
+Q86. Which of the following is true about the values() method?
+A. Returns a Collection view of values
+B. Returns a Set view of values
+C. Returns a List view of values
+D. Returns a Map view of values
+Answer: A
+
+Q87. What is the time complexity of putAll() in HashMap?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n^2)
+Answer: C
+
+Q88. Which of the following is true about the equals() method in HashSet?
+A. Compares elements in order
+B. Compares elements regardless of order
+C. Compares only size
+D. Compares only hashcodes
+Answer: B
+
+Q89. What is the output of: Set<String> set = new HashSet<>(); set.add("A"); set.add("B"); set.clear(); System.out.println(set.size());?
+A. 0
+B. 1
+C. 2
+D. Exception
+Answer: A
+
+Q90. Which method is used to get an entry for a key in HashMap?
+A. get()
+B. getOrDefault()
+C. Both A and B
+D. getEntry()
+Answer: A
+
+Q91. What is the purpose of the computeIfAbsent() method in HashMap?
+A. Computes value if key is absent
+B. Computes value if key is present
+C. Computes value always
+D. Computes hashcode
+Answer: A
+
+Q92. Which of the following is true about the put() method in HashMap?
+A. Inserts a key-value pair
+B. Replaces existing value for the key
+C. Both A and B
+D. Inserts only if key is absent
+Answer: C
+
+Q93. What is the output of: Map<String, String> map = new HashMap<>(); map.put("A", "B"); map.put("B", "C"); System.out.println(map.get("A"));?
+A. B
+B. C
+C. null
+D. Exception
+Answer: A
+
+Q94. Which of the following is true about the replace() method in HashMap?
+A. Replaces value if key is present
+B. Replaces value if key is absent
+C. Replaces key if value is present
+D. Replaces both key and value
+Answer: A
+
+Q95. What is the purpose of the forEachRemaining() method in HashMap?
+A. Iterates over remaining entries
+B. Iterates over all entries
+C. Iterates over keys
+D. Iterates over values
+Answer: A
+
+Q96. Which of the following is true about the load factor in HashMap?
+A. Determines when to resize
+B. Determines the initial capacity
+C. Determines the number of buckets
+D. Determines the hashcode
+Answer: A
+
+Q97. What is the output of: Set<String> set = new HashSet<>(); set.add("A"); set.add("A"); set.add("B"); System.out.println(set);?
+A. [A, B]
+B. [A, A, B]
+C. [B, A]
+D. [A]
+Answer: A
+
+Q98. Which method is used to get the value associated with a key or a default value?
+A. getOrDefault()
+B. get()
+C. computeIfAbsent()
+D. getOrElse()
+Answer: A
+
+Q99. What is the purpose of the merge() method in HashMap?
+A. Merges two values for a key
+B. Merges two keys
+C. Merges two maps
+D. Merges two entries
+Answer: A
+
+Q100. Which of the following is true about the capacity of HashMap?
+A. Always a power of two
+B. Always an odd number
+C. Always a prime number
+D. Always an even number
+Answer: A

@@ -1,0 +1,43 @@
+TOPIC: Queues
+
+Q1. Which method is used to retrieve and remove the head of a Queue, returning null if the queue is empty?
+A. remove()
+B. poll()
+C. peek()
+D. element()
+Answer: B
+
+Q2. Which queue operation removes and returns the head of the queue, throwing NoSuchElementException if empty?
+A. peek()
+B. poll()
+C. remove()
+D. offer()
+Answer: C
+
+Q3. Which method of Queue adds an element without throwing exception even if capacity is restricted?
+A. add()
+B. offer()
+C. put()
+D. insert()
+Answer: B
+
+Q4. Consider: Queue<Integer> q = new LinkedList<>(); q.offer(1); q.offer(2); q.offer(3); System.out.println(q.poll() + q.peek() + q.element());
+A. 6
+B. 4
+C. 3
+D. 5
+Answer: B
+
+Q5. What is the output of: Queue<Integer> q = new LinkedList<>(); q.add(5); q.add(3); q.add(7); System.out.println(q.remove()); System.out.println(q.peek()); q.add(2); System.out.println(q.remove());
+A. 5, 3, 3
+B. 5, 3, 7
+C. 5, 3, 2
+D. 5, 7, 3
+Answer: A
+
+Q6. Which statement about Deque interface is incorrect?
+A. Supports element insertion and removal at both ends
+B. LinkedList implements Deque
+C. ArrayDeque is more efficient than LinkedList for stack operations
+D. Deque extends Queue interface
+Answer: D

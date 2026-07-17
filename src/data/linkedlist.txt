@@ -1,0 +1,64 @@
+TOPIC: Linked List
+
+Q1. What is the primary difference between ArrayList and LinkedList in Java?
+A. ArrayList implements List interface, LinkedList does not
+B. ArrayList uses dynamic array, LinkedList uses doubly linked list
+C. ArrayList is synchronized, LinkedList is not
+D. LinkedList allows null elements, ArrayList does not
+Answer: B
+
+Q2. What is the time complexity of inserting an element at the beginning of a LinkedList?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n^2)
+Answer: A
+
+Q3. Which class implements both List and Deque interfaces in Java?
+A. ArrayList
+B. Vector
+C. LinkedList
+D. Stack
+Answer: C
+
+Q4. In a LinkedList, which of the following operations is most efficient?
+A. Inserting an element at a specific index
+B. Removing an element from the middle
+C. Adding an element to the front
+D. Accessing an element by index
+Answer: C
+
+Q5. What is the output of: LinkedList<String> list = new LinkedList<>(); list.add("A"); list.add("B"); list.addFirst("C"); list.addLast("D"); System.out.println(list);
+A. [A, B, C, D]
+B. [C, A, B, D]
+C. [C, D, A, B]
+D. [D, C, A, B]
+Answer: B
+
+Q6. What is the memory overhead per element in a LinkedList compared to an ArrayList?
+A. Significantly higher due to node objects with next/prev references
+B. Significantly lower
+C. Same
+D. Depends on element type
+Answer: A
+
+Q7. Consider: LinkedList<Integer> list = new LinkedList<>(); list.add(1); list.add(2); list.add(3); list.add(1, 10); What is the output of list.get(2)?
+A. 1
+B. 2
+C. 3
+D. 10
+Answer: B
+
+Q8. If you need frequent insertion and deletion at both ends of a list, which collection should you use?
+A. ArrayList
+B. Vector
+C. LinkedList
+D. Stack
+Answer: C
+
+Q9. Consider: LinkedList<Integer> list = new LinkedList<>(Arrays.asList(1,2,3,4,5)); list.remove(2); System.out.println(list);
+A. [1, 3, 4, 5]
+B. [1, 2, 4, 5]
+C. [1, 2, 3, 4]
+D. [2, 3, 4, 5]
+Answer: B

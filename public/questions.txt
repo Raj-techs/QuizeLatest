@@ -1,0 +1,209 @@
+Q1. What is the primary difference between ArrayList and LinkedList in Java?
+A. ArrayList implements List interface, LinkedList does not
+B. ArrayList uses dynamic array, LinkedList uses doubly linked list
+C. ArrayList is synchronized, LinkedList is not
+D. LinkedList allows null elements, ArrayList does not
+Answer: B
+
+Q2. What is the time complexity of inserting an element at the beginning of a LinkedList?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n^2)
+Answer: A
+
+Q3. Which of the following correctly describes the iterator order in a Stack when using Iterator interface?
+A. LIFO order from top to bottom
+B. FIFO order from bottom to top
+C. The order in which elements were pushed
+D. Reverse of insertion order
+Answer: C
+
+Q4. What is the initial capacity of an empty ArrayList created using default constructor?
+A. 0
+B. 10
+C. 16
+D. Depends on JVM implementation
+Answer: B
+
+Q5. Which method is used to retrieve and remove the head of a Queue, returning null if the queue is empty?
+A. remove()
+B. poll()
+C. peek()
+D. element()
+Answer: B
+
+Q6. Consider: LinkedList<Integer> list = new LinkedList<>(); list.add(1); list.add(2); list.add(3); list.add(1, 10); What is the output of list.get(2)?
+A. 1
+B. 2
+C. 3
+D. 10
+Answer: B
+
+Q7. Which of the following operations has O(n) time complexity in both ArrayList and LinkedList?
+A. Adding at end
+B. Removing first element
+C. Searching for an element by value
+D. Getting element by index
+Answer: C
+
+Q8. What is the output when the following code is executed? Stack<Integer> s = new Stack<>(); s.push(5); s.push(10); s.push(15); System.out.println(s.pop()); System.out.println(s.peek());
+A. 15, 10
+B. 15, 15
+C. 10, 10
+D. 10, 5
+Answer: A
+
+Q9. Which class implements both List and Deque interfaces in Java?
+A. ArrayList
+B. Vector
+C. LinkedList
+D. Stack
+Answer: C
+
+Q10. What is the effect of calling trimToSize() method on an ArrayList?
+A. Reduces the capacity to the current size
+B. Removes all null elements
+C. Sorts the elements
+D. Reverses the order of elements
+Answer: A
+
+Q11. In a LinkedList, which of the following operations is most efficient?
+A. Inserting an element at a specific index
+B. Removing an element from the middle
+C. Adding an element to the front
+D. Accessing an element by index
+Answer: C
+
+Q12. What is the default capacity of a Stack when created using new Stack<>()?
+A. 10
+B. 0
+C. Depends on the underlying Vector's initial capacity
+D. 16
+Answer: C
+
+Q13. Which of the following correctly explains the fail-fast behavior in iterators of ArrayList?
+A. Iterator throws ConcurrentModificationException if list is modified structurally after iterator creation
+B. Iterator never throws exceptions
+C. Iterator creates a copy of the list
+D. Iterator continues iterating even if list is modified
+Answer: A
+
+Q14. What is the output of: LinkedList<String> list = new LinkedList<>(); list.add("A"); list.add("B"); list.addFirst("C"); list.addLast("D"); System.out.println(list);
+A. [A, B, C, D]
+B. [C, A, B, D]
+C. [C, D, A, B]
+D. [D, C, A, B]
+Answer: B
+
+Q15. Which queue operation removes and returns the head of the queue, throwing NoSuchElementException if empty?
+A. peek()
+B. poll()
+C. remove()
+D. offer()
+Answer: C
+
+Q16. What is the time complexity of adding an element at the end of an ArrayList when the internal array needs to resize?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: B
+
+Q17. Consider: Queue<Integer> q = new LinkedList<>(); q.offer(1); q.offer(2); q.offer(3); System.out.println(q.poll() + q.peek() + q.element());
+A. 6
+B. 4
+C. 3
+D. 5
+Answer: B
+
+Q18. Which statement about Stack class in Java is true?
+A. Stack extends ArrayList
+B. Stack implements Queue interface
+C. Stack extends Vector
+D. Stack is a thread-safe implementation
+Answer: C
+
+Q19. What is the memory overhead per element in a LinkedList compared to an ArrayList?
+A. Significantly higher due to node objects with next/prev references
+B. Significantly lower
+C. Same
+D. Depends on element type
+Answer: A
+
+Q20. If you need frequent insertion and deletion at both ends of a list, which collection should you use?
+A. ArrayList
+B. Vector
+C. LinkedList
+D. Stack
+Answer: C
+
+Q21. What is the output of: ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5)); list.subList(1,4).clear(); System.out.println(list);
+A. [1, 5]
+B. [1, 2, 3, 4]
+C. [2, 3, 4, 5]
+D. [1, 4, 5]
+Answer: A
+
+Q22. Which method of Queue adds an element without throwing exception even if capacity is restricted?
+A. add()
+B. offer()
+C. put()
+D. insert()
+Answer: B
+
+Q23. What is the result of: Stack<String> s = new Stack<>(); System.out.println(s.isEmpty()); s.push("Java"); System.out.println(s.isEmpty()); s.pop(); System.out.println(s.isEmpty());
+A. true, false, false
+B. true, true, false
+C. true, false, true
+D. false, false, true
+Answer: C
+
+Q24. Which of the following allows bidirectional iteration in Java collections?
+A. Iterator
+B. ListIterator
+C. Enumeration
+D. Spliterator
+Answer: B
+
+Q25. What is the time complexity of removing an element by value from an unsorted ArrayList?
+A. O(1)
+B. O(n)
+C. O(log n)
+D. O(n^2)
+Answer: B
+
+Q26. Consider: LinkedList<Integer> list = new LinkedList<>(Arrays.asList(1,2,3,4,5)); list.remove(2); System.out.println(list);
+A. [1, 3, 4, 5]
+B. [1, 2, 4, 5]
+C. [1, 2, 3, 4]
+D. [2, 3, 4, 5]
+Answer: B
+
+Q27. Which collection would you use to implement a Last-In-First-Out (LIFO) data structure?
+A. Queue
+B. ArrayList
+C. Stack
+D. LinkedList with addFirst()
+Answer: C
+
+Q28. What happens when you call add(index, element) on an ArrayList where index == size()?
+A. Throws IndexOutOfBoundsException
+B. Adds element at the end of the list
+C. Replaces the last element
+D. Inserts element before the last element
+Answer: B
+
+Q29. Which statement about Deque interface is incorrect?
+A. Supports element insertion and removal at both ends
+B. LinkedList implements Deque
+C. ArrayDeque is more efficient than LinkedList for stack operations
+D. Deque extends Queue interface
+Answer: D
+
+Q30. What is the output of: Queue<Integer> q = new LinkedList<>(); q.add(5); q.add(3); q.add(7); System.out.println(q.remove()); System.out.println(q.peek()); q.add(2); System.out.println(q.remove());
+A. 5, 3, 3
+B. 5, 3, 7
+C. 5, 3, 2
+D. 5, 7, 3
+Answer: A
