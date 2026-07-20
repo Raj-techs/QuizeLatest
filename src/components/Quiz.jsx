@@ -30,7 +30,7 @@ const TOPIC_TEXT = {
   'pseudocode.txt': pseudocodeText
 };
 
-const DEFAULT_TIME = 30; // seconds, for regular MCQ topics
+const DEFAULT_TIME = 60; // seconds, for regular MCQ topics
 
 const Quiz = ({ topic, onBack }) => {
   // topic.timeLimit (seconds) is set by TopicSelection when the user picks a
